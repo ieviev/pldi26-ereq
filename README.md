@@ -1,5 +1,7 @@
 # EREQ
 
+[![DOI](https://zenodo.org/badge/1184193701.svg)](https://doi.org/10.5281/zenodo.19072416)
+
 An MSO (weak monadic second-order logic) satisfiability solver over finite words,
 based on symbolic extended regular expressions with derivatives.
 
