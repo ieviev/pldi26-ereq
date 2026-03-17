@@ -1,0 +1,50 @@
+[package]
+name = "ereq"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+dnf = ["ereq-algebra/dnf"]
+no_rewrites = ["ereq-algebra/no_rewrites"]
+no_rewrite_pred = ["ereq-algebra/no_rewrite_pred"]
+low_cost_simplify = ["ereq-algebra/low_cost_simplify"]
+low_high_limit = ["ereq-algebra/low_high_limit"]
+heavy_equiv = ["ereq-algebra/heavy_equiv"]
+then_first = ["ereq-algebra/then_first"]
+no_compl_contains = ["ereq-algebra/no_compl_contains"]
+extract_exists = ["ereq-algebra/extract_exists"]
+no_init_simplify = ["ereq-algebra/no_init_simplify"]
+profile = ["ereq-algebra/profile"]
+
+[dependencies]
+ereq-algebra = { version = "0.1.0", path = "../ereq-algebra" }
+pomelo = "0.2.3"
+
+[[bin]]
+name = "ereq"
+path = "src/main.rs"
+
+[[example]]
+name = "benchmarks"
+required-features = ["profile"]
+
+[[example]]
+name = "benchmarks-random"
+
+[[example]]
+name = "forall_empty_string"
+
+[[example]]
+name = "config_experiment"
+
+[[example]]
+name = "benchmarks_gaston"
+
+[[example]]
+name = "distance"
+required-features = ["low_cost_simplify", "low_high_limit"]
+
+[dev-dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+wait-timeout = "0.2.1"

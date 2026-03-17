@@ -1,0 +1,66 @@
+{
+  "nodes": {
+    "mona-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583226644,
+        "narHash": "sha256-GmYAbZeyCNhi2zZYmvqdoIWOtE6OQJjs0dnenvTzmko=",
+        "owner": "cs-au-dk",
+        "repo": "MONA",
+        "rev": "e10403bf9d193a0e490ce735bb5514263a00165b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cs-au-dk",
+        "repo": "MONA",
+        "rev": "e10403bf9d193a0e490ce735bb5514263a00165b",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1773646010,
+        "narHash": "sha256-iYrs97hS7p5u4lQzuNWzuALGIOdkPXvjz7bviiBjUu8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5b2c2d84341b2afb5647081c1386a80d7a8d8605",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "mona-src": "mona-src",
+        "nixpkgs": "nixpkgs",
+        "rust-overlay": "rust-overlay"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1773716879,
+        "narHash": "sha256-vXCTasEzzTTd0ZGEuyle20H2hjRom66JeNr7i2ktHD0=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "1a9ddeb45c5751b800331363703641b84d1f41f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,14 @@
+target/
+results/
+.git/
+MONA/.git/
+plots/node_modules/
+plots/figs/
+*.tgz
+TODO.md
+*.sh
+!run-ltlf.sh
+*.swp
+*.swo
+*~
+.DS_Store

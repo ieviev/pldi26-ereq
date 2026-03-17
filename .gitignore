@@ -1,0 +1,10 @@
+/bin
+/target
+**/target
+/results
+rustc-ice-*.txt
+*.swp
+*.swo
+*~
+.DS_Store
+*.tgz

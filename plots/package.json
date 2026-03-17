@@ -1,0 +1,16 @@
+{
+  "name": "ereq-plots",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "random": "node gen-cactus.mjs",
+    "structured": "node gen-cactus.mjs --structured",
+    "all": "node gen-cactus.mjs && node gen-cactus.mjs --structured"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "jsdom": "^28.1.0",
+    "pdfkit": "^0.17.2",
+    "svg-to-pdfkit": "^0.1.8"
+  }
+}

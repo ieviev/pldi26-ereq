@@ -1,0 +1,24 @@
+[package]
+name = "ereq-algebra"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+count_derivatives = []
+dnf = []
+no_rewrites = []
+no_rewrite_pred = []
+bounded_subsumes = []
+no_init_simplify = []
+low_cost_simplify = []
+low_high_limit = []
+heavy_equiv = []
+then_first = []
+no_compl_contains = []
+extract_exists = []
+profile = []
+
+[dependencies]
+rustc-hash = "2"
+
+
