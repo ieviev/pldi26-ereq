@@ -42,7 +42,6 @@ name = "benchmarks_gaston"
 
 [[example]]
 name = "distance"
-required-features = ["low_cost_simplify", "low_high_limit"]
 
 [dev-dependencies]
 serde = { version = "1.0.228", features = ["derive"] }
